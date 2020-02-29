@@ -57,14 +57,14 @@ section {
     width: 100%;
 }
 
-.header nav {
+.header-nav {
     height: 100px;
     /*flex➡横並び*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*固定ヘッダー*/
-    position: fixed;
+    /*position: fixed;*/
 }
 
 .header nav ul {
@@ -87,7 +87,7 @@ section {
 }
 
 .mainvisual img {
-    width: 70%;
+    width: 60%;
     height: 500px;
     object-fit: cover;
     margin-left: 30%;
@@ -105,10 +105,39 @@ section {
 .bg1 {
     background: #e8e7e7;
     height: 700px;
-    width: 45px;
+    width: 45%;
     position: absolute;
     top: -18%;
     left: 0;
+    /*===================================
+    cssの重なり順を指定する
+    -1とすることで背景色を一番後ろに持っていく
+    ===================================*/
     z-index: -1;
 }
 
+/*========= greeting ==========*/
+.greeting h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.greeting .contents {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+
+.greeting .contents figure {
+    width: 50%;
+}
+
+.greeting .contents figure img {
+    width: 90%;
+    object-fit: cover;
+}
+
+.greeting .content {
+    width: 48%;
+}
