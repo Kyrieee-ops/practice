@@ -71,7 +71,7 @@ section {
     /*flex➡横並び*/
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 .header nav ul li {
@@ -104,7 +104,7 @@ section {
 
 .bg1 {
     background:linear-gradient(to right, #7fa7fc, #ffffff);
-    height: 700px;
+    height: 750px;
     width: 45%;
     position: absolute;
     top: -18%;
@@ -152,7 +152,7 @@ section {
 
 .work::before {
     content: '';
-    background: linear-gradient(to left, #c0d4ff, #ffffff);
+    background: linear-gradient(to bottom, #c0d4ff, #ffffff);
     /**親の要素を基準*/
     position: absolute;
     width: 100%;
@@ -219,4 +219,14 @@ section {
     color: #949494;
     padding-right: 0px;
     margin-right: 80px;
+}
+
+.activity img {
+    width: 50%;
+    object-fit: cover; 
+    margin-left: 10%;  
+}
+
+.bg2 {
+    
 }
