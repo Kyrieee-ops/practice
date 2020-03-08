@@ -82,7 +82,7 @@ section {
 }
 
 .header nav ul li {
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 
@@ -279,4 +279,50 @@ section {
     top: -18%;
     right: 0;
     z-index: -1;
+}
+
+footer {
+    width: 100% ;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    position: relative;
+    left: 10%;
+}
+
+.address h2 p {
+    /*position: absolute;*/
+    /*align-items: center;*/
+    
+}
+
+.footer ul {
+    /*リスト横並び*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer ul li {
+    /*なぜマージン入れないといけないか確認*/
+    margin-right: 70px;
+}
+
+.copyright {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+}
+
+.copyright p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+    line-height: 100px;
 }
