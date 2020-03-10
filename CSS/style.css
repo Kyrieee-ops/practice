@@ -57,10 +57,12 @@ section {
     width: 100%;
     /*
     position: fixed;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(2  55, 255, 255, 0.8);
     z-index: 9999;
     */
 }
+
+
 
 .header-nav {
     height: 100px;
@@ -72,6 +74,27 @@ section {
     transition: 3s ease-out;*/
     /*固定ヘッダー*/
     /*position: fixed;*/
+}
+
+.header-nav h1 {
+    position: relative;
+}
+
+/*疑似要素　h1の後に英文表記*/
+.header-nav h1::after {
+    content: 'ChildCare Web Creater Salon';
+    color: gray;
+    /*デフォルトが16px設定となっているので、
+    1remで10pxへ設定*/
+    font-size: 1rem;
+    /*改行*/
+    display: block;
+    position: absolute;
+    text-align: center;
+    /*top: 0;*/
+    /*真ん中に位置を指定したいときは左右を0にする*/
+    left: 0;
+    right: 0;
 }
 
 .header nav ul {
@@ -94,6 +117,8 @@ section {
 }
 
 .mainvisual img {
+    /*角丸指定*/
+    border-radius: 10px;
     width: 60%;
     height: 500px;
     object-fit: cover;
@@ -142,6 +167,8 @@ section {
 }
 
 .greeting .contents figure img {
+    /*角丸指定*/
+    border-radius: 10px;
     width: 90%;
     object-fit: cover;
 }
@@ -228,13 +255,15 @@ section {
     padding-right: 0px;
     margin-right: 80px;
 }
-
+/*========= activity ==========*/
 .activity {
     position: relative;
     height: 500px;
 }
 
 .activity-img img {
+    /*角丸指定*/
+    /*border-radius: 10px;*/
     position: relative;
     width: 60%;
     height: 400px;
@@ -249,6 +278,8 @@ section {
     left: 10%;
     width: 60%;
     height: 400px;
+    /*角丸指定*/
+    /*border-radius: 10px;*/
     background-color: rgba(0,0,0,0.4);
 }
 /*
@@ -261,16 +292,25 @@ section {
     padding: 1rem;
 }
 */
+
 .activity h2 a {
+    /*display: block;*/
     position: absolute; 
     top: 30%;
     left: 30%;
-    background:rgba(255, 255, 255, 0.6);
+    background:rgba(255, 255, 255, 0.8);
     text-align: center;
     font-size: 3rem;
     padding: 1rem;
 }
 
+/*ホバーでボタンの色を反転*/
+.activity h2 a:hover{
+    background: #1B1B1B;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
 .bg2 {
     background:linear-gradient(to left, #7fa7fc, #ffffff);
     position: absolute;
@@ -281,6 +321,7 @@ section {
     z-index: -1;
 }
 
+/*========= footer ==========*/
 footer {
     width: 100% ;
 }
@@ -296,7 +337,9 @@ footer {
     left: 10%;
 }
 
-.address h2 p {
+.address p {
+    line-height: 1.8;
+    margin-bottom: 30px;
     /*position: absolute;*/
     /*align-items: center;*/
     
@@ -320,6 +363,7 @@ footer {
     background-color: #333;
 }
 
+/*========= copyright ==========*/
 .copyright p {
     font-size: 0.75rem;
     text-align: center;
